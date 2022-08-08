@@ -4,6 +4,7 @@ class Solution(object):
         if (len(original) != m*n):
             #if not, return empty array
             return []
+        
         else:
             newArray = []
             #range(start, stop, step)
