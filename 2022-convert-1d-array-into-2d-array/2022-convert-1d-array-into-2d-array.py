@@ -5,12 +5,12 @@ class Solution(object):
             #if not, return empty array
             return []
         
-        else:
-            newArray = []
-            #range(start, stop, step)
-            for i in range (0, len(original), n):
+        newArray = []
+        #range(start, stop, step)
+        for i in range (0, len(original), n):
+            if original[i:i+n] != []:
                 newArray.append(original[i:i+n])
                 
-            return newArray
+        return newArray
         
         
