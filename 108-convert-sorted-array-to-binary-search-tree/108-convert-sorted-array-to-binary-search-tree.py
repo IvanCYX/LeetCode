@@ -13,10 +13,10 @@ class Solution:
             middle = (left + right) // 2
             root = TreeNode(nums[middle])
             
-            root.right = getRoot(middle+1, right)
+            root.right = getRoot(middle + 1, right)
             root.left = getRoot(left, middle - 1)
             
             return root
         
-        return getRoot(0, len(nums)-1)
+        return getRoot(0, len(nums) - 1)
         
